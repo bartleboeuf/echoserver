@@ -19,10 +19,8 @@ spec:
       labels:
         app: echoserver
     spec:
-      nodeSelector:
-        intent: apps
       containers:
-      - image: gcr.io/google_containers/echoserver:1.4
+      - image: gcr.io/google_containers/echoserver:1.10
         imagePullPolicy: Always
         name: echoserver
         ports:
